@@ -33,7 +33,11 @@ public class XmlFileParser {
                     temp.setId(null);
                 else
                     temp.setId(Integer.parseInt(customer.getElementsByTagName("id").item(0).getFirstChild().getNodeValue()));
-                temp.setName(customer.getElementsByTagName("name").item(0).getFirstChild().getNodeValue());
+                if (customer.getElementsByTagName("name").item(0).getFirstChild() == null)
+                    temp.setName(null);
+                else
+                    temp.setName(customer.getElementsByTagName("name").item(0).getFirstChild().getNodeValue());
+//                temp.setName(customer.getElementsByTagName("name").item(0).getFirstChild().getNodeValue());
                 NodeList orders = customer.getElementsByTagName("order");
                 //Создаем список заказов для Customer
                 List<Order> orderList = new ArrayList<Order>(orders.getLength());

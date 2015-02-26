@@ -58,7 +58,7 @@ public class Customers {
                         customer = c;
                 else if (c.getOrdersAmount() == null)
                         continue;
-                else
+                else if ((c.getOrdersAmount() == null) && (customer.getOrdersAmount() == null))
                         return null;
             }
         }
@@ -66,13 +66,11 @@ public class Customers {
     }
 
     public Double getMaxOrderAmount() {
-        double total = Double.MIN_VALUE;
+        Double total = Double.MIN_VALUE;
         if ((customers!= null) &&(customers.size() > 0)) {
-
             for (Customer c: customers) {
                 for (Order o: c.getOrders()) {
-                    if (o.getOrderAmount() == null)
-                        continue;
+                    if (o.getOrderAmount() != null)
                     if (o.getOrderAmount() > total)
                         total = o.getOrderAmount();
                 }

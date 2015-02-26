@@ -27,21 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FileUploadSuccess.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FileUploadSuccess.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/FileUploadSuccess.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8229167" vertical-offset="331" max-vertical-offset="1003">
-              <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+            <state vertical-scroll-proportion="-22.884615" vertical-offset="255" max-vertical-offset="1003">
+              <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Customers.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Customers.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/task/common/model/Customers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="805" max-vertical-offset="1836">
-              <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.42979944" vertical-offset="584" max-vertical-offset="1802">
+              <caret line="60" column="94" selection-start-line="60" selection-start-column="94" selection-end-line="60" selection-end-column="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,10 +62,10 @@
       <file leaf-file-name="XmlFileParser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/task/common/controller/XmlFileParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="458" max-vertical-offset="1241">
-              <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="1309">
+              <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
               <folding>
-                <element signature="e#1670#1677#0" expanded="true" />
+                <element signature="e#1936#1943#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,10 +88,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/task/common/controller/FileUploadController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/task/common/model/Position.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/task/common/model/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/task/common/controller/XmlFileParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/task/common/model/Customer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/task/common/model/Customers.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/FileUploadSuccess.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/task/common/controller/XmlFileParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/task/common/model/Customers.java" />
       </list>
     </option>
   </component>
@@ -733,12 +733,12 @@
       <workItem from="1424929308234" duration="2014000" />
       <workItem from="1424932060741" duration="13877000" />
       <workItem from="1424946379895" duration="104000" />
-      <workItem from="1424946601385" duration="3865000" />
+      <workItem from="1424946601385" duration="4634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19860000" />
+    <option name="totallyTimeSpent" value="20629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -934,12 +934,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/FileUploadSuccess.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.884615" vertical-offset="255" max-vertical-offset="1003">
+          <caret line="50" column="61" selection-start-line="50" selection-start-column="61" selection-end-line="50" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/task/common/controller/XmlFileParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="458" max-vertical-offset="1241">
-          <caret line="72" column="29" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="1309">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
           <folding>
-            <element signature="e#1670#1677#0" expanded="true" />
+            <element signature="e#1936#1943#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -954,19 +962,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/task/common/model/Customers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="805" max-vertical-offset="1836">
-          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.42979944" vertical-offset="584" max-vertical-offset="1802">
+          <caret line="60" column="94" selection-start-line="60" selection-start-column="94" selection-end-line="60" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/FileUploadSuccess.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8229167" vertical-offset="331" max-vertical-offset="1003">
-          <caret line="52" column="7" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
