@@ -1,0 +1,3 @@
+com\task\common\controller\FileUploadController.class
+com\task\common\validator\FileUploadValidator.class
+com\task\common\model\FileUpload.class
