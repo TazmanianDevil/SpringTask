@@ -1,3 +1,8 @@
-com\task\common\controller\FileUploadController.class
 com\task\common\validator\FileUploadValidator.class
 com\task\common\model\FileUpload.class
+com\task\common\controller\Customers.class
+com\task\common\model\Customer.class
+com\task\common\controller\FileUploadController.class
+com\task\common\controller\XmlFileParser.class
+com\task\common\model\Order.class
+com\task\common\model\Position.class
