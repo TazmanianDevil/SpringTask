@@ -34,10 +34,12 @@ public class Customer {
         this.orders = orders;
     }
 
-    public double getOrdersAmount() {
+    public Double getOrdersAmount() {
         double total = 0;
         if (orders != null) {
             for (Order o: orders) {
+                if (o.getOrderAmount() == null)
+                    return null;
                 total += o.getOrderAmount();
             }
         }
@@ -45,7 +47,7 @@ public class Customer {
     }
 
     public String toString() {
-        return id + " " + name;
+        return name;
     }
 
     public int getOrdersCount() {

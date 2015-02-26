@@ -24,15 +24,15 @@
 </head>
 
 <body>
-<h2>Spring MVC file upload example</h2>
+<h2>Spring task</h2>
 
 <form:form method="POST" commandName="fileUploadForm"
            enctype="multipart/form-data">
 
     <form:errors path="*" cssClass="errorblock" element="div" />
 
-    Please select a file to upload : <input type="file" name="file" />
-    <input type="submit" value="upload" />
+    Please select a file to upload : <input type="file" name="file" /> </br>
+    <input type="submit" value="Upload file" />
 		<span><form:errors path="file" cssClass="error" />
 		</span>
 

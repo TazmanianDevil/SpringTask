@@ -1,4 +1,4 @@
-<%@ page import="com.task.common.controller.Customers" %>
+<%@ page import="com.task.common.model.Customers" %>
 <%@ page import="com.task.common.model.Customer" %>
 <%@ page import="com.task.common.model.Order" %>
 <%--
@@ -12,10 +12,8 @@
 
 <html>
 <body>
-<h2>Spring MVC file upload example</h2>
+<h2>Result page</h2>
 
-FileName : "
-<strong> ${fileName} </strong>" - Uploaded Successful.</br>
 <p>Customer's list</p>
 <table cellspacing="2" cellpadding="3" border="1" width="100%">
     <tr>
@@ -48,25 +46,9 @@ FileName : "
     }%>
 </table>
 <strong>Total order's price is <%=c.getTotalAmount()%></strong></br>
-<strong>Customer with max order's amount is <%=c.getMaxOrderCustomer().toString()%></strong></br>
+<strong>Customer with max order's amount is <%=c.getMaxOrderCustomer()%></strong></br>
 <strong>Max order's amount is is <%=c.getMaxOrderAmount()%></strong></br>
 <strong>Min order's amount is is <%=c.getMinOrderAmount()%></strong></br>
 <strong>Total order's count is is <%=c.getTotalOrdersCount()%></strong></br>
-
-<%--<table>--%>
-    <%--<tr>--%>
-        <%--<th>Order's id</th>--%>
-        <%--<th>Order's avg amount</th>--%>
-        <%--<%for (Customer customer: c.getCustomers()) {--%>
-            <%--for (Order o: customer.getOrders()) {%>--%>
-                <%--<tr>--%>
-                    <%--<td><%=o.getId()%></td>--%>
-                    <%--<td><%=o.getAverageAmount()%></td>--%>
-                <%--</tr>--%>
-            <%--<%}--%>
-
-        <%--}%>--%>
-    <%--</tr>--%>
-<%--</table>--%>
 </body>
 </html>
