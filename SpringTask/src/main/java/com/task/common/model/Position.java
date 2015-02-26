@@ -32,7 +32,9 @@ public class Position {
         this.count = count;
     }
 
-    public double getPositionAmount() {
+    public Double getPositionAmount() {
+        if ((price == null)||(count == null))
+            return null;
         return price * count;
     }
     public String toString() {

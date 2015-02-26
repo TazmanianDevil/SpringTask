@@ -29,24 +29,42 @@ public class XmlFileParser {
             for (int i = 0; i < customers.getLength(); i++) {
                 Customer temp = new Customer();
                 Element customer = (Element)customers.item(i);
-                temp.setId(Integer.parseInt(customer.getElementsByTagName("id").item(0).getFirstChild().getNodeValue()));
-                temp.setName(customer.getElementsByTagName("name").item(0).getFirstChild().getNodeValue());
+                if (customer.getElementsByTagName("id").item(0).getFirstChild() == null)
+                    temp.setId(null);
+                else
+                    temp.setId(Integer.parseInt(customer.getElementsByTagName("id").item(0).getFirstChild().getNodeValue()));
+                if (customer.getElementsByTagName("name").item(0).getFirstChild() == null)
+                    temp.setName(null);
+                else
+                    temp.setName(customer.getElementsByTagName("name").item(0).getFirstChild().getNodeValue());
+//                temp.setName(customer.getElementsByTagName("name").item(0).getFirstChild().getNodeValue());
                 NodeList orders = customer.getElementsByTagName("order");
                 //Создаем список заказов для Customer
                 List<Order> orderList = new ArrayList<Order>(orders.getLength());
                 for (int j = 0; j < orders.getLength(); j++) {
                     Order o = new Order();
                     Element order = (Element)orders.item(j);
-                    o.setId(Integer.parseInt(order.getElementsByTagName("id").item(0).getFirstChild().getNodeValue()));
+                    if (order.getElementsByTagName("id").item(0).getFirstChild() != null )
+                        o.setId(Integer.parseInt(order.getElementsByTagName("id").item(0).getFirstChild().getNodeValue()));
+                    else
+                        o.setId(null);
                     //Создаем список позиций в заказе для Order
                     NodeList positions = order.getElementsByTagName("position");
                     ArrayList<Position> positionList = new ArrayList<Position>(positions.getLength());
                     for (int k = 0; k < positions.getLength(); k++) {
                         Element position = (Element)positions.item(k);
                         Position p = new Position();
-                        p.setId(Integer.parseInt(position.getElementsByTagName("id").item(0).getFirstChild().getNodeValue()));
-                        p.setPrice(Double.parseDouble(position.getElementsByTagName("price").item(0).getFirstChild().getNodeValue()));
-                        p.setCount(Integer.parseInt(position.getElementsByTagName("count").item(0).getFirstChild().getNodeValue()));
+                        if (position.getElementsByTagName("id").item(0).getFirstChild() != null)
+                            p.setId(Integer.parseInt(position.getElementsByTagName("id").item(0).getFirstChild().getNodeValue()));
+                        else
+                            p.setId(null);
+                        if (position.getElementsByTagName("price").item(0).getFirstChild() != null)
+                            p.setPrice(Double.parseDouble(position.getElementsByTagName("price").item(0).getFirstChild().getNodeValue()));
+                        else p.setPrice(null);
+                        if (position.getElementsByTagName("count").item(0).getFirstChild() != null)
+                            p.setCount(Integer.parseInt(position.getElementsByTagName("count").item(0).getFirstChild().getNodeValue()));
+                        else
+                            p.setCount(null);
                         positionList.add(p);
                     }
                     o.setPositions(positionList);

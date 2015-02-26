@@ -25,23 +25,28 @@ public class Order {
         this.positions = positions;
     }
 
-    public double getOrderAmount() {
+    public Double getOrderAmount() {
         double total = 0;
         if (positions != null) {
             for (Position p: positions) {
+                if (p.getPositionAmount() == null)
+                    return null;
                 total += p.getPositionAmount();
             }
         }
         return total;
     }
 
-    public String toDouble() {
+    public String toString() {
         return id.toString();
     }
 
-    public double getAverageAmount() {
-        if (positions != null)
-            return getOrderAmount()/positions.size();
-        else return 0;
+    public Double getAverageAmount() {
+        if (positions != null) {
+            if (getOrderAmount() == null)
+                return null;
+            return getOrderAmount() / positions.size();
+        }
+        else return null;
     }
 }
